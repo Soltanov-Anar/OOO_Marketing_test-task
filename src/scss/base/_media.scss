@@ -1,0 +1,56 @@
+@media (max-width: 772px) {
+    .main {
+        padding-top: 60px;
+        &__descr {
+            padding-left: 26px;
+        }
+        &__hit {
+            margin-left: 20px;
+        }
+        &__btn {
+            p {
+                text-transform: uppercase;
+            }
+        }
+        &__block {
+            height: 383px;
+            padding: 30px 100px 24px 30px;
+            margin-top: 10px;
+            background: url('../../img/bg-772.png') center (center/cover) no-repeat;
+        }
+        &__items {
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 230px;
+        }
+        &__item {
+            width: 353px;
+            &:nth-child(2) {
+            margin-top: 30px;
+            }
+            &:nth-child(4) {
+                margin-top: 30px;
+            }
+
+        }
+        &__flagman {
+            top: 198px;
+            right: -22%;
+        }
+        &__price, &__diameter, &__packaging, &__type {
+            font-size: 16px;
+            img {
+                padding-right: 8px;
+            }
+        }
+        &__send {
+            margin-top: 30px;
+        }
+        &__pbtn, &__dbtn {
+            background-color: #fff;
+            border: none;
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+}
