@@ -10,8 +10,8 @@
     } 
     &__btn {
         position: relative;
-        background-color: #FEC022;
-        color: #fff;
+        background-color: $second-color;
+        color: $white-bg;
         width: 124px;
         height: 28px;
         border-radius: 4px;
@@ -40,7 +40,7 @@
         margin-top: 30px;
         min-height: 250px;
         background: url('../../img/bg.png') center (center/cover) no-repeat;
-        background-color: white;
+        background-color: $white-bg;
         padding: 30px 291px 136px 135px;
         position: relative;
     }
@@ -63,7 +63,7 @@
         margin-top: 20px;
         width: 123px;
         height: 40px;
-        background-color: #fff;
+        background-color: $white-bg;
         font-size: 20px;
         line-height: 40px;
         font-weight: 500;
@@ -72,7 +72,7 @@
     }
     &__dbtn, &__pbtn {
         margin-top: 20px;
-        background-color: #fff;
+        background-color: $white-bg;
         border-radius: 4px;
         height: 40px;
         font-size: 16px;
@@ -92,12 +92,12 @@
         margin-top: 50px;
     }
     &__sendBtn {
-        border: 2px solid #E31E25;
-        color: #E31E25;
+        border: 2px solid $main-color;
+        color: $main-color;
         width: 211px;
         height: 60px;
         border-radius: 4px;
-        background-color: #fff;
+        background-color: $white-bg;
         font-weight: 500;
         font-size: 14px;
         line-height: 30px;
@@ -109,13 +109,14 @@
         right: 130px;
     }
     &__dbtn, &__pbtn, &__sendBtn {
+        border: 1px solid $white-bg;
         &:hover {
-            border: 1px solid #E31E25;
+            border: 1px solid $main-color;
             background-color: #FCE8E9;
         }
         &:active {
-            background-color: #E31E25;
-            color: #fff;
+            background-color: $main-color;
+            color: $white-bg;
         }
     }
     
