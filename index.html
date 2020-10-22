@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='anar' author='soltanov'>
     <title>Marketing</title>
     <link rel="shortcut icon" href="https://gu-st.ru/lk-st/favicon.ico?ver=1.1">    
     <link rel="stylesheet" href="css/style.min.css">
@@ -18,7 +17,7 @@
                 <div class="main__hit">     
                     <button class='main__btn'>
                         <img src="icons/hit.png" alt="hit">
-                        <p>Хит продаж</p>
+                        <span>Хит продаж</span>
                     </button>
                 </div>
             </div>
@@ -65,8 +64,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="main__send">
-                    <button class='main__sendBtn'>
+                <div class="main__send" data-modal="consultation">
+                    <button class='main__sendBtn' data-modal="consultation">
                         Оформить заявку
                     </button>
                 </div>
@@ -78,10 +77,33 @@
         </div>
     </section>
 
+    <div class="overlay">
+        <div class="modal" id='order'>
+            <div class="modal__close">
+                &times;
+            </div>
+            <div class="modal__subtitle">
+                заявка на ПЭ LB-52U ГОСТ
+            </div>
+            <form action="#">
+                <input class='modal__input' name='name' type="text" placeholder="Имя">
+                <input class='modal__input' name='phone' placeholder="Телефон">
+                <input class='modal__input' name='email' type="email" placeholder="Email">
+                <div class="modal__radio">
+                    <input type="checkbox" class='custom-checkbox' id='agree' name='agree'>
+                    <label for="agree"><span>Даю согласие на обработку персональных данных</span></label>  
+                </div>
+                <button class='modal__button'>
+                     Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src='js/jquery.maskedinput.min.js'></script>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

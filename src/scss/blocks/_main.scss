@@ -21,7 +21,7 @@
             top: 6.5px;
             left: 10px;
         }
-        p {
+        span {
             padding-left: 11px;
             font-size: 12px;
             line-height: 28px;
@@ -119,5 +119,13 @@
             color: $white-bg;
         }
     }
-    
 }
+
+.active {
+    background-color: $main-color;
+    color: $white-bg;
+    &:hover {
+        background-color: $main-color;
+    }
+}
+

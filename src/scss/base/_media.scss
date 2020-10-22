@@ -8,7 +8,7 @@
             margin-left: 20px;
         }
         &__btn {
-            p {
+            span {
                 text-transform: uppercase;
             }
         }
@@ -53,6 +53,26 @@
             font-weight: 400;
         }
     }
+    .modal {
+        width: 430px;
+        min-height: 430px;
+        &__subtitle {
+            height: 80px;
+            font-size: 20px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        &__button {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    .active {
+        background-color: $main-color;
+        &:active {
+            background-color: $main-color;
+        }
+    }
 }
 
 @media (max-width: 320px) {
@@ -69,7 +89,7 @@
             margin-left: 20px;
         }
         &__btn {
-            p {
+            span {
                 text-transform: uppercase;
             }
         }
@@ -127,5 +147,74 @@
                 border: 1px solid $main-color;
             }
         }
+    }
+    
+.modal {
+    width: 280px;
+    min-height: 465px;
+    &__subtitle {
+        height: 110px;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 30px;
+        line-height: 30px;
+    }
+    &__input {
+        width: 250px;
+        height: 50px;
+    }
+    &__button {
+        margin: 10px 0 15px 15px;
+        width: 250px;
+        height: 50px;
+        border-radius: 4px;
+    }
+    &__close {
+        top: 12px;
+        right: 12px;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+}
+
+.active {
+    background-color: $main-color;
+    &:active {
+        background-color: $main-color;
+    }
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: baseline;
+    user-select: none;
+    padding-left: 17px;
+    text-align: top;
+    margin-bottom: 0;
+    span {
+        padding-right: 40px;
+        padding-left: 10px;
+        text-align-last: left;
+    }
+  }
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
     }
 }
